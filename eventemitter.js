@@ -42,3 +42,9 @@ declare class MyEventEmitter extends EventEmitter {
     ) => void
   ): this;
 }
+
+let myInstance = new MyEventEmitter()
+
+myInstance.on('pending', () => {})
+myInstance.on('success', (num: number) => {console.log(num * 2)})
+myInstance.on('success', (badStr: string) => {console.log(badStr.length)}) // Error
