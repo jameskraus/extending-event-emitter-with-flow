@@ -11,6 +11,8 @@ type CustomEventObj = {|
 declare class MyEventEmitter extends EventEmitter {
   on(
     'pending',
+    // Alternatively, you can pass in a callback like () => void
+    // as the type here. Either works for the examples below.
     (
       e: null,
       ...args: Array<any>
