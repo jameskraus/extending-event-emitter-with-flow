@@ -1,6 +1,6 @@
 # Extending Event Emitter with Flow Types
 
-This repo serves as an answer to a stackoverflow question on how to extend
+This repo serves as an answer to a [stackoverflow question](https://stackoverflow.com/questions/49411515/limiting-the-type-of-eventname-in-a-class-that-extends-eventemitter-with-flow) on how to extend
 EventEmitter and still let Flow know what kind of arguments were passed
 to the event emitter.
 
